@@ -1,16 +1,14 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from dotenv import load_dotenv
-import os
-import requests
-import json
+
 import logging
 
 import json
 import faiss
-import numpy as np
 from sentence_transformers import SentenceTransformer
-
+import requests
+import os
+from dotenv import load_dotenv
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -19,12 +17,12 @@ app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
 # Load FAISS + dữ liệu
-model = SentenceTransformer('all-MiniLM-L6-v2')
-faiss_index = faiss.read_index("faiss_index.index")
+model = SentenceTransformer('paraphrase-MiniLM-L3-v2')
+faiss_index = faiss.read_index("faiss_index_lw.index")
 
-with open("product_data.json", "r", encoding="utf-8") as f:
+with open("product_data_lw.json", "r", encoding="utf-8") as f:
     product_data = json.load(f)
-with open("product_texts.json", "r", encoding="utf-8") as f:
+with open("product_texts_lw.json", "r", encoding="utf-8") as f:
     product_texts = json.load(f)
 
 def semantic_search(query, top_k=3):
@@ -58,6 +56,7 @@ You are an friendly assistant that answers user questions based strictly on the 
 7. Make SURE the products AVAILABLE in order to be printed, and make sure not to print the stock of the product.
 8. Do NOT use JSON or code format in your response. 
 9. If the you can add some description about the products (like price, description, etc), but make sure not includ the stock
+10. Make sure the quantity response is correctly and match the [Shop data]
     """
 
     
@@ -110,7 +109,7 @@ def chat():
 
     except Exception as e:
         return jsonify({"error": str(e)}), 500
-
+    
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))  # Use Render's PORT or default to 5000
     app.run(host="0.0.0.0", port=port, debug=os.environ.get("FLASK_DEBUG", "0") == "1")

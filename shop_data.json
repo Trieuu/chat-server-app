@@ -4,50 +4,88 @@
       "product_id": "B1",
       "type": "flower",
       "name": "Red Rose Bouquet",
-      "price": 40,
-      "stock": 15,
+      "price": 19.99,
+      "stock": 12,
       "available": true,
-      "description": "Assorted stems of seasonal roses.",
-      "description_detail": "A classic bouquet of vibrant red roses, perfect for romantic occasions.",
-      "tip": "Keep stems trimmed and water fresh daily.",
-      "caution": "Avoid direct sunlight for prolonged periods.",
-      "image_url": ["demo_1", "demo", "demo_2", "demo_3"],
-      "care": { "sun": "Partial" },
+      "description": "A luxurious bouquet of fresh red roses, hand-tied with lush green foliage. Perfect for weddings, anniversaries, or romantic gestures, these premium roses convey love, passion, and elegance. Each stem is carefully selected for vibrant color, long-lasting freshness, and soft velvety petals.",
+      "image_url": [
+        "/src/assets/demo_1.png",
+        "/src/assets/demo.png",
+        "/src/assets/demo_2.png",
+        "/src/assets/demo_3.png"
+      ],
       "flower_details": {
-        "occasion": ["Wedding"],
-        "color": ["Pink Flowers"],
+        "occasion": [
+          "Wedding"
+        ],
+        "color": [
+          "Pink Flowers"
+        ],
         "flower_type": "Roses",
         "options": [
-          { "name": "original", "price": 19.99, "stems": 5 },
-          { "name": "deluxe", "price": 29.99, "stems": 10 },
-          { "name": "grand", "price": 39.99, "stems": 15 }
-        ],
-        "accessories": ["V1", "V2"]
+          {
+            "name": "original",
+            "price": 19.99,
+            "stems": 5,
+            "stock": 3
+          },
+          {
+            "name": "deluxe",
+            "price": 29.99,
+            "stems": 10,
+            "stock": 0
+          },
+          {
+            "name": "grand",
+            "price": 39.99,
+            "stems": 15,
+            "stock": 0
+          }
+        ]
       }
     },
     {
       "product_id": "B2",
       "type": "flower",
       "name": "Farmer's Choice Peonies",
-      "price": 40,
-      "stock": 12,
+      "price": 21.99,
+      "stock": 1,
       "available": true,
-      "description": "Assorted stems of seasonal peonies.",
-      "description_detail": "A rustic mix of peonies, hand-picked for freshness.",
-      "tip": "Place in a cool area away from heat sources.",
-      "caution": "Petals are delicate; handle with care.",
-      "image_url": ["demo_1", "demo", "demo_2"],
-      "care": { "sun": "Full" },
+      "description": "A charming assortment of seasonal peonies sourced directly from local farmers. Featuring large, fragrant blooms in soft white shades, these flowers symbolize prosperity, good fortune, and honor. Ideal for celebrations, thank-you gifts, or welcoming a new baby, each bouquet is artfully arranged for maximum freshness and beauty.",
+      "image_url": [
+        "/src/assets/demo_1.png",
+        "/src/assets/demo.png",
+        "/src/assets/demo_2.png"
+      ],
       "flower_details": {
-        "occasion": ["New Baby", "Thank you"],
-        "color": ["White Flowers"],
+        "occasion": [
+          "New Baby",
+          "Thank you"
+        ],
+        "color": [
+          "White Flowers"
+        ],
         "flower_type": "Peonies",
         "options": [
-          { "name": "original", "price": 19.99, "stems": 5 },
-          { "name": "deluxe", "price": 29.99, "stems": 10 },
-          { "name": "grand", "price": 39.99, "stems": 15 }
-        ],
-        "accessories": ["V1", "V2"]
+          {
+            "name": "original",
+            "price": 21.99,
+            "stems": 5,
+            "stock": 0
+          },
+          {
+            "name": "deluxe",
+            "price": 29.99,
+            "stems": 10,
+            "stock": 5
+          },
+          {
+            "name": "grand",
+            "price": 39.99,
+            "stems": 15,
+            "stock": 4
+          }
+        ]
       }
     },
     {
@@ -57,47 +95,36 @@
       "price": 40,
       "stock": 18,
       "available": true,
-      "description": "Beautiful peony flowers.",
-      "description_detail": "Lush peonies symbolizing prosperity and love.",
-      "tip": "Change water every two days for longevity.",
-      "caution": "Keep away from fruit to avoid ethylene gas exposure.",
-      "image_url": ["demo_5"],
-      "care": { "sun": "Partial" },
+      "description": "A delightful bouquet of fresh pink peonies, renowned for their lush, ruffled petals and sweet fragrance. These elegant blooms are a symbol of romance, good luck, and happy life. Ideal for weddings, graduations, or special celebrations, each bouquet is arranged with care to create a vibrant, luxurious display.",
+      "image_url": [
+        "/src/assets/demo_5.png"
+      ],
       "flower_details": {
-        "occasion": ["Wedding", "Graduation"],
-        "color": ["Pink Flowers"],
+        "occasion": [
+          "Wedding",
+          "Graduation"
+        ],
+        "color": [
+          "Pink Flowers"
+        ],
         "flower_type": "Peonies",
         "options": [
-          { "name": "original", "price": 19.99, "stems": 5 },
-          { "name": "deluxe", "price": 29.99, "stems": 10 },
-          { "name": "grand", "price": 39.99, "stems": 15 }
-        ],
-        "accessories": ["V1", "V2"]
-      }
-    },
-    {
-      "product_id": "B4",
-      "type": "flower",
-      "name": "Sunflower Arrangement",
-      "price": 35,
-      "stock": 15,
-      "available": true,
-      "description": "Bright and cheerful sunflowers.",
-      "description_detail": "A sunny arrangement to brighten any day.",
-      "tip": "Support stems with a tall vase.",
-      "caution": "Avoid overwatering.",
-      "image_url": ["demo_2"],
-      "care": { "sun": "Full" },
-      "flower_details": {
-        "occasion": ["Thank you", "Get Well"],
-        "color": ["Yellow Flowers"],
-        "flower_type": "Sunflowers",
-        "options": [
-          { "name": "original", "price": 15.99, "stems": 3 },
-          { "name": "deluxe", "price": 25.99, "stems": 6 },
-          { "name": "grand", "price": 35.99, "stems": 9 }
-        ],
-        "accessories": ["V1", "V2"]
+          {
+            "name": "original",
+            "price": 19.99,
+            "stems": 5
+          },
+          {
+            "name": "deluxe",
+            "price": 29.99,
+            "stems": 10
+          },
+          {
+            "name": "grand",
+            "price": 39.99,
+            "stems": 15
+          }
+        ]
       }
     },
     {
@@ -107,26 +134,542 @@
       "price": 19,
       "stock": 12,
       "available": true,
-      "description": "A beautiful vase for your flowers.",
-      "description_detail": "Elegant glass vase with a sleek design.",
-      "tip": "Clean with mild soap to maintain clarity.",
-      "caution": "Fragile; handle with care.",
-      "image_url": ["demo_3"],
-      "care": { "sun": "N/A" }
+      "description": "A sleek and modern glass vase with a timeless cylindrical design. Perfect for showcasing medium to large floral arrangements, this vase enhances the beauty of any bouquet while adding a touch of sophistication to your home décor.",
+      "image_url": [
+        "/src/assets/demo_3.png"
+      ]
     },
     {
       "product_id": "V2",
       "type": "vase",
       "name": "Montecitoss Vase",
-      "price": 25,
+      "price": 40,
+      "stock": 0,
+      "available": true,
+      "description": "A tall, elegant vase with a contemporary silhouette and premium finish. Designed to complement both classic and modern interiors, it’s ideal for displaying long-stemmed flowers or as a standalone statement piece.",
+      "image_url": [
+        "/src/assets/demo_4.png"
+      ]
+    },
+    {
+      "product_id": "B4",
+      "type": "flower",
+      "name": "Sunflower Brights",
+      "price": 24.99,
+      "stock": 15,
+      "available": true,
+      "description": "Cheerful sunflowers with bold golden petals and dark centers. Symbol of positivity, luck, and summer energy; great for birthdays, congratulations, and home décor. Long vase life and eye‑catching color make this bouquet perfect for sunny celebrations.",
+      "image_url": [
+        "/src/assets/sunflower_1.png",
+        "/src/assets/sunflower_2.png"
+      ],
+      "flower_details": {
+        "occasion": [
+          "Summer Solstice",
+          "International Friendship Day",
+          "Mid-Year Sales"
+        ],
+        "color": [
+          "Yellow Flowers"
+        ],
+        "flower_type": "Sunflowers",
+        "options": [
+          {
+            "name": "original",
+            "price": 15.99,
+            "stems": 3,
+            "stock": 8
+          },
+          {
+            "name": "deluxe",
+            "price": 25.99,
+            "stems": 6,
+            "stock": 5
+          },
+          {
+            "name": "grand",
+            "price": 35.99,
+            "stems": 9,
+            "stock": 2
+          }
+        ]
+      }
+    },
+    {
+      "product_id": "B5",
+      "type": "flower",
+      "name": "Rainbow Tulip Mix",
+      "price": 22.5,
+      "stock": 20,
+      "available": true,
+      "description": "Mixed-color tulips arranged in a clean, modern style. Smooth cup-shaped blooms in red, pink, yellow, and white. Ideal for Valentine's Day and Easter gifting; fresh, optimistic, and minimal fragrance.",
+      "image_url": [
+        "/src/assets/tulip_1.png"
+      ],
+      "flower_details": {
+        "occasion": [
+          "Valentine's Day",
+          "Easter"
+        ],
+        "color": [
+          "Mixed Colors"
+        ],
+        "flower_type": "Tulips",
+        "options": [
+          {
+            "name": "original",
+            "price": 22.5,
+            "stems": 7,
+            "stock": 6
+          },
+          {
+            "name": "deluxe",
+            "price": 32.0,
+            "stems": 12,
+            "stock": 4
+          },
+          {
+            "name": "grand",
+            "price": 44.0,
+            "stems": 18,
+            "stock": 2
+          }
+        ]
+      }
+    },
+    {
+      "product_id": "B6",
+      "type": "flower",
+      "name": "White Lily Tribute",
+      "price": 27.0,
+      "stock": 18,
+      "available": true,
+      "description": "Elegant white lilies with broad, star-shaped petals and a gentle aroma. A classic expression of appreciation and respect—suited for Mother's Day and teachers—bringing purity and calm to any room.",
+      "image_url": [
+        "/src/assets/lily_1.png",
+        "/src/assets/lily_2.png"
+      ],
+      "flower_details": {
+        "occasion": [
+          "Mother's Day",
+          "Easter",
+          "Vietnamese Teacher's Day"
+        ],
+        "color": [
+          "White Flowers"
+        ],
+        "flower_type": "Lilies",
+        "options": [
+          {
+            "name": "original",
+            "price": 27.0,
+            "stems": 5,
+            "stock": 6
+          },
+          {
+            "name": "deluxe",
+            "price": 38.0,
+            "stems": 9,
+            "stock": 6
+          },
+          {
+            "name": "grand",
+            "price": 52.0,
+            "stems": 14,
+            "stock": 6
+          }
+        ]
+      }
+    },
+    {
+      "product_id": "B7",
+      "type": "flower",
+      "name": "Orchid Elegance",
+      "price": 35.0,
+      "stock": 10,
+      "available": true,
+      "description": "Premium phalaenopsis orchids with arching stems and long-lasting blooms. A refined gift that conveys admiration and success; perfect for International Women's Day and Vietnamese Women's Day.",
+      "image_url": [
+        "/src/assets/orchid_1.png"
+      ],
+      "flower_details": {
+        "occasion": [
+          "International Women's Day",
+          "Vietnamese Women's Day"
+        ],
+        "color": [
+          "Purple Flowers"
+        ],
+        "flower_type": "Orchids",
+        "options": [
+          {
+            "name": "original",
+            "price": 35.0,
+            "stems": 1,
+            "stock": 5
+          },
+          {
+            "name": "deluxe",
+            "price": 55.0,
+            "stems": 2,
+            "stock": 3
+          },
+          {
+            "name": "grand",
+            "price": 79.0,
+            "stems": 3,
+            "stock": 2
+          }
+        ]
+      }
+    },
+    {
+      "product_id": "B8",
+      "type": "flower",
+      "name": "Chrysanthemum Harvest",
+      "price": 19.5,
+      "stock": 25,
+      "available": true,
+      "description": "Full, cushiony chrysanthemums in warm autumn tones. A festive bouquet associated with family gatherings and seasonal festivals—ideal for Mid‑Autumn, Children's Festival, and Thanksgiving tables.",
+      "image_url": [
+        "/src/assets/chrysanthemum_1.png"
+      ],
+      "flower_details": {
+        "occasion": [
+          "Mid-Autumn Festival",
+          "Tet Trung Thu (Children's Festival)",
+          "Thanksgiving"
+        ],
+        "color": [
+          "Orange Flowers"
+        ],
+        "flower_type": "Chrysanthemums",
+        "options": [
+          {
+            "name": "original",
+            "price": 19.5,
+            "stems": 6,
+            "stock": 12
+          },
+          {
+            "name": "deluxe",
+            "price": 28.0,
+            "stems": 10,
+            "stock": 8
+          },
+          {
+            "name": "grand",
+            "price": 37.0,
+            "stems": 14,
+            "stock": 5
+          }
+        ]
+      }
+    },
+    {
+      "product_id": "B9",
+      "type": "flower",
+      "name": "Marigold & Gerbera Glow",
+      "price": 18.99,
+      "stock": 22,
+      "available": true,
+      "description": "Vivid marigolds and gerberas in fiery oranges and golds. Energetic and festive—great for Halloween décor, spring parades, and public holidays. Brightens offices and storefronts instantly.",
+      "image_url": [
+        "/src/assets/marigold_1.png"
+      ],
+      "flower_details": {
+        "occasion": [
+          "Halloween",
+          "Reunification Day",
+          "Labor Day",
+          "Earth Day",
+          "Oktoberfest"
+        ],
+        "color": [
+          "Orange Flowers",
+          "Yellow Flowers"
+        ],
+        "flower_type": "Marigolds",
+        "options": [
+          {
+            "name": "original",
+            "price": 18.99,
+            "stems": 6,
+            "stock": 10
+          },
+          {
+            "name": "deluxe",
+            "price": 27.99,
+            "stems": 10,
+            "stock": 7
+          },
+          {
+            "name": "grand",
+            "price": 36.99,
+            "stems": 14,
+            "stock": 5
+          }
+        ]
+      }
+    },
+    {
+      "product_id": "B10",
+      "type": "flower",
+      "name": "Poinsettia Holiday Set",
+      "price": 23.0,
+      "stock": 30,
+      "available": true,
+      "description": "Classic red poinsettias with rich, velvety bracts and deep green foliage. Seasonal favorite for Christmas décor; excellent centerpiece for Winter Solstice gatherings and Boxing Day brunches.",
+      "image_url": [
+        "/src/assets/poinsettia_1.png"
+      ],
+      "flower_details": {
+        "occasion": [
+          "Christmas",
+          "Winter Solstice",
+          "Boxing Day"
+        ],
+        "color": [
+          "Red Flowers"
+        ],
+        "flower_type": "Poinsettias",
+        "options": [
+          {
+            "name": "original",
+            "price": 23.0,
+            "stems": 1,
+            "stock": 15
+          },
+          {
+            "name": "deluxe",
+            "price": 34.0,
+            "stems": 2,
+            "stock": 10
+          },
+          {
+            "name": "grand",
+            "price": 46.0,
+            "stems": 3,
+            "stock": 5
+          }
+        ]
+      }
+    },
+    {
+      "product_id": "B11",
+      "type": "flower",
+      "name": "Camellia Lunar Bloom",
+      "price": 28.5,
+      "stock": 16,
+      "available": true,
+      "description": "Silky camellias with layered petals and glossy leaves. Auspicious for the new year—symbolizing prosperity and elegance—suited for Lunar New Year and Chinese New Year gifting.",
+      "image_url": [
+        "/src/assets/camellia_1.png"
+      ],
+      "flower_details": {
+        "occasion": [
+          "Lunar New Year (Tết)",
+          "Chinese New Year"
+        ],
+        "color": [
+          "Pink Flowers",
+          "Red Flowers"
+        ],
+        "flower_type": "Camellias",
+        "options": [
+          {
+            "name": "original",
+            "price": 28.5,
+            "stems": 5,
+            "stock": 6
+          },
+          {
+            "name": "deluxe",
+            "price": 39.0,
+            "stems": 9,
+            "stock": 6
+          },
+          {
+            "name": "grand",
+            "price": 54.0,
+            "stems": 14,
+            "stock": 4
+          }
+        ]
+      }
+    },
+    {
+      "product_id": "B12",
+      "type": "flower",
+      "name": "Lotus Serenity",
+      "price": 32.0,
       "stock": 12,
       "available": true,
-      "description": "A beautiful vase for your flowers.",
-      "description_detail": "Stylish vase with a unique finish.",
-      "tip": "Fill with decorative stones for added stability.",
-      "caution": "Avoid abrasive cleaners.",
-      "image_url": ["demo_4"],
-      "care": { "sun": "N/A" }
+      "description": "Sacred lotus blossoms with serene petals and a fresh, clean scent. A cultural icon symbolizing purity and renewal—ideal for Vietnam National Day, Hung Kings Day, and Friendship Day gestures.",
+      "image_url": [
+        "/src/assets/lotus_1.png"
+      ],
+      "flower_details": {
+        "occasion": [
+          "Vietnam National Day",
+          "Hung Kings Commemoration Day",
+          "International Friendship Day"
+        ],
+        "color": [
+          "Pink Flowers",
+          "White Flowers"
+        ],
+        "flower_type": "Lotus",
+        "options": [
+          {
+            "name": "original",
+            "price": 32.0,
+            "stems": 5,
+            "stock": 4
+          },
+          {
+            "name": "deluxe",
+            "price": 46.0,
+            "stems": 9,
+            "stock": 5
+          },
+          {
+            "name": "grand",
+            "price": 62.0,
+            "stems": 14,
+            "stock": 3
+          }
+        ]
+      }
+    },
+    {
+      "product_id": "B13",
+      "type": "flower",
+      "name": "Daisy Sunshine",
+      "price": 16.75,
+      "stock": 28,
+      "available": true,
+      "description": "Fresh white daisies with sunny centers for a clean, cheerful look. Easy to style for Father's Day picnics and summertime parties; light fragrance and long vase life.",
+      "image_url": [
+        "/src/assets/daisy_1.png"
+      ],
+      "flower_details": {
+        "occasion": [
+          "Father's Day",
+          "Summer Solstice"
+        ],
+        "color": [
+          "White Flowers",
+          "Yellow Flowers"
+        ],
+        "flower_type": "Daisies",
+        "options": [
+          {
+            "name": "original",
+            "price": 16.75,
+            "stems": 8,
+            "stock": 14
+          },
+          {
+            "name": "deluxe",
+            "price": 24.0,
+            "stems": 12,
+            "stock": 9
+          },
+          {
+            "name": "grand",
+            "price": 31.5,
+            "stems": 18,
+            "stock": 5
+          }
+        ]
+      }
+    },
+    {
+      "product_id": "B14",
+      "type": "flower",
+      "name": "Lavender Calm Bouquet",
+      "price": 21.25,
+      "stock": 26,
+      "available": true,
+      "description": "Fragrant lavender bundles paired with soft greenery. Calming, rustic style suited for eco‑themed events and early‑summer promotions; naturally aromatic with relaxing notes.",
+      "image_url": [
+        "/src/assets/lavender_1.png"
+      ],
+      "flower_details": {
+        "occasion": [
+          "World Environment Day",
+          "Mid-Year Sales"
+        ],
+        "color": [
+          "Purple Flowers"
+        ],
+        "flower_type": "Lavender",
+        "options": [
+          {
+            "name": "original",
+            "price": 21.25,
+            "stems": 8,
+            "stock": 12
+          },
+          {
+            "name": "deluxe",
+            "price": 29.75,
+            "stems": 12,
+            "stock": 9
+          },
+          {
+            "name": "grand",
+            "price": 39.0,
+            "stems": 18,
+            "stock": 5
+          }
+        ]
+      }
+    },
+    {
+      "product_id": "B15",
+      "type": "flower",
+      "name": "Baby's Breath Cloud",
+      "price": 14.9,
+      "stock": 40,
+      "available": true,
+      "description": "Airy baby's breath arranged as a light, cloudlike bouquet or filler. Minimalist aesthetic that photographs beautifully—great for New Year parties and November online shopping events.",
+      "image_url": [
+        "/src/assets/babysbreath_1.png"
+      ],
+      "flower_details": {
+        "occasion": [
+          "New Year",
+          "Singles' Day",
+          "Black Friday",
+          "Cyber Monday"
+        ],
+        "color": [
+          "White Flowers"
+        ],
+        "flower_type": "Baby's Breath",
+        "options": [
+          {
+            "name": "original",
+            "price": 14.9,
+            "stems": 12,
+            "stock": 20
+          },
+          {
+            "name": "deluxe",
+            "price": 22.0,
+            "stems": 20,
+            "stock": 12
+          },
+          {
+            "name": "grand",
+            "price": 29.0,
+            "stems": 28,
+            "stock": 8
+          }
+        ]
+      }
     }
   ]
 }
